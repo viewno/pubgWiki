@@ -6,6 +6,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,9 +19,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="Kgh-Qa-K8t">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="Kgh-Qa-K8t">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="f1G-TL-pOD">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -104,15 +104,31 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="f1G-TL-pOD" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0KM-kP-Bcv"/>
+                            <constraint firstItem="f1G-TL-pOD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="30W-39-hTA"/>
+                            <constraint firstItem="Kgh-Qa-K8t" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="4KF-dI-x0G"/>
+                            <constraint firstItem="f1G-TL-pOD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9v1-tF-x7b"/>
+                            <constraint firstItem="f1G-TL-pOD" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="AiG-CB-8TS"/>
+                            <constraint firstItem="Kgh-Qa-K8t" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="FNO-ff-FhK"/>
                             <constraint firstItem="f1G-TL-pOD" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="GGz-tY-pch"/>
+                            <constraint firstItem="Kgh-Qa-K8t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JeR-Wj-tBc"/>
                             <constraint firstItem="f1G-TL-pOD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="KJV-vt-dNi"/>
                             <constraint firstItem="f1G-TL-pOD" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Mo9-r2-FCI"/>
                             <constraint firstItem="f1G-TL-pOD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="OhU-gF-ozl"/>
                             <constraint firstItem="f1G-TL-pOD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ttl-FO-d1z"/>
+                            <constraint firstItem="Kgh-Qa-K8t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XCg-6h-4Yf"/>
+                            <constraint firstItem="Kgh-Qa-K8t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YUF-Xf-r2c"/>
+                            <constraint firstItem="Kgh-Qa-K8t" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="aLJ-4G-Yp7"/>
+                            <constraint firstItem="Kgh-Qa-K8t" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bnt-2t-4ND"/>
+                            <constraint firstItem="Kgh-Qa-K8t" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="gsH-uM-ZWM"/>
                             <constraint firstItem="f1G-TL-pOD" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="i3Q-rf-VS3"/>
+                            <constraint firstItem="Kgh-Qa-K8t" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="mdU-sw-oZ5"/>
                             <constraint firstItem="f1G-TL-pOD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nA2-WU-e6S"/>
+                            <constraint firstItem="Kgh-Qa-K8t" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="nCB-PU-oYn"/>
+                            <constraint firstItem="f1G-TL-pOD" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="nft-n8-KEY"/>
                             <constraint firstItem="f1G-TL-pOD" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="osf-P2-Rgk"/>
                             <constraint firstItem="f1G-TL-pOD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sLp-X2-3Td"/>
+                            <constraint firstItem="Kgh-Qa-K8t" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="sQa-op-K5q"/>
+                            <constraint firstItem="Kgh-Qa-K8t" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="uAR-bC-ne2"/>
                             <constraint firstItem="f1G-TL-pOD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="wIJ-Ua-543"/>
                             <constraint firstItem="f1G-TL-pOD" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="zd8-Ut-ZNO"/>
                         </constraints>

@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  pubgWiki
 //
-//  Created by Ryusei Tashiro on 2017/12/05.
+//  Created by Ryusei Tashiro on 2017/11/05.
 //  Copyright © 2017年 Ryusei Tashiro. All rights reserved.
 //
 
@@ -28,6 +28,7 @@ class ViewController: UIViewController, UICollectionViewDataSource,UICollectionV
         let testCell:UICollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
         
         let imageView = testCell.contentView.viewWithTag(1) as! UIImageView
+        // 落ちる可能性あり UICollectionViewCellのサブクラスを作って、そこにラベルやら定義
         let cellImage = UIImage(named: photos[indexPath.row])
         imageView.image = cellImage
         
@@ -41,20 +42,21 @@ class ViewController: UIViewController, UICollectionViewDataSource,UICollectionV
     func collectionView(_ collectionView: UICollectionView,
                         didSelectItemAt indexPath: IndexPath) {
         nowSelcetedId = indexPath.row
-        performSegue(withIdentifier: "toSubViewController",sender: nil)
+        performSegue(withIdentifier: "toSubViewController",sender: nil) // indexPath: IndexPath
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any!) {
-        if (segue.identifier == "toSubViewController") {
+        if segue.identifier == "toSubViewController" {
             
-            let subVC: SubViewController = (segue.destination as? SubViewController)!
+            let subVC: SubViewController = (segue.destination as? SubViewController)! //
             subVC.selectedWeaponId = nowSelcetedId
             
         }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let cellSize:CGFloat = self.view.bounds.width/2 - 20
+        let cellSize:CGFloat = self.view.bounds.width / 2 - 20 // ライフサイクル
+        // UiScreen.main.bounds 画面サイズ
         return CGSize(width: cellSize, height: cellSize)
     }
     
@@ -63,7 +65,7 @@ class ViewController: UIViewController, UICollectionViewDataSource,UICollectionV
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return 5 // 配列のカウント
     }
     
     override func didReceiveMemoryWarning() {

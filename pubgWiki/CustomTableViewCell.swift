@@ -2,7 +2,7 @@
 //  CustomTableViewCell.swift
 //  pubgWiki
 //
-//  Created by Ryusei Tashiro on 2017/12/07.
+//  Created by Ryusei Tashiro on 2017/11/07.
 //  Copyright © 2017年 Ryusei Tashiro. All rights reserved.
 //
 

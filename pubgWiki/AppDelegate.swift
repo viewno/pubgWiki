@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  pubgWiki
 //
-//  Created by Ryusei Tashiro on 2017/12/05.
+//  Created by Ryusei Tashiro on 2017/11/05.
 //  Copyright © 2017年 Ryusei Tashiro. All rights reserved.
 //
 
